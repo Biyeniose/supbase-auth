@@ -1,0 +1,82 @@
+[
+  {
+    "team_name": "Manchester United",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+  },
+  {
+    "team_name": "Real Madrid",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+  },
+  {
+    "team_name": "FC Barcelona",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+  },
+  {
+    "team_name": "Liverpool",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+  },
+  {
+    "team_name": "Chelsea",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+  },
+  {
+    "team_name": "Juventus",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Juventus_FC_-_pictogram_black_%28Italy%2C_2017%29.svg"
+  },
+  {
+    "team_name": "Bayern Munich",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg"
+  },
+  {
+    "team_name": "Paris Saint-Germain",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"
+  },
+  {
+    "team_name": "Manchester City",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+  },
+  {
+    "team_name": "Arsenal",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+  },
+  {
+    "team_name": "AC Milan",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"
+  },
+  {
+    "team_name": "Inter Milan",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg"
+  },
+  {
+    "team_name": "Atlético Madrid",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/f/f9/Atletico_Madrid_Logo_2024.svg"
+  },
+  {
+    "team_name": "Tottenham Hotspur",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg"
+  },
+  {
+    "team_name": "Borussia Dortmund",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg"
+  },
+  {
+    "team_name": "Napoli",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/SSC_Neapel.svg"
+  },
+  {
+    "team_name": "AS Roma",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/f/f7/AS_Roma_logo_%282017%29.svg"
+  },
+  {
+    "team_name": "Ajax",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam.svg"
+  },
+  {
+    "team_name": "Sevilla",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Sevilla_FC_logo.svg"
+  },
+  {
+    "team_name": "Leicester City",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/en/2/2d/Leicester_City_crest.svg"
+  }
+]

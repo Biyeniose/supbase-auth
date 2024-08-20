@@ -1,4 +1,6 @@
 import { AuthButtons } from "./AuthButtons";
+import TeamForm from "./TeamForm";
+import Image from "next/image";
 
 export const Hero = () => {
   return (
@@ -19,13 +21,41 @@ export const Hero = () => {
         <div className="mx-auto max-w-2xl lg:py-16">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-              Data to enrich your online business
+              Make Predictions for upcoming sports matches
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Sign Up and compete with your friends to see who accumulates the
+              most points each week
             </p>
+
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Predict matches ranging from the Premier League, La Liga,
+              Bundesliga
+            </p>
+            <div className="justify-center flex gap-3">
+              <Image
+                src="/league_logos/epl.jpg" // Corrected path
+                alt="Description of the image" // Alt text for accessibility
+                width={100} // Desired width of the image
+                height={100} // Desired height of the image
+              />
+
+              <Image
+                src="/league_logos/laliga.jpg" // Corrected path
+                alt="Description of the image" // Alt text for accessibility
+                width={100} // Desired width of the image
+                height={100} // Desired height of the image
+                className=""
+              />
+
+              <Image
+                src="/league_logos/ucl.jpg" // Corrected path
+                alt="Description of the image" // Alt text for accessibility
+                width={120} // Desired width of the image
+                height={100} // Desired height of the image
+                className=""
+              />
+            </div>
 
             <AuthButtons />
           </div>

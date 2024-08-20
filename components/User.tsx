@@ -5,8 +5,8 @@ export default async function User() {
   const supabase = createClient();
 
   const {
-    data: { session },
-  } = await supabase.auth.getSession();
+    data: { user },
+  } = await supabase.auth.getUser();
 
   const signOut = async () => {
     "use server";
@@ -16,15 +16,44 @@ export default async function User() {
     return redirect("/login");
   };
 
+  const handleProfileClick = async () => {
+    "use server";
+    return redirect("/profile");
+  };
+
+  const handlePredictClick = async () => {
+    "use server";
+    return redirect("/predict");
+  };
+
   return (
-    session && (
+    user && (
       <div className="flex items-center gap-4">
-        Hey, {session.user.email}!
+        <form action={handleProfileClick}>
+          <button
+            type="submit"
+            className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+          >
+            Profile
+          </button>
+        </form>
+        <form action={handlePredictClick}>
+          <button
+            type="submit"
+            className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+          >
+            Predict
+          </button>
+        </form>
         <form action={signOut}>
-          <button className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover">
+          <button
+            type="submit"
+            className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+          >
             Logout
           </button>
         </form>
+        {user.email}
       </div>
     )
   );
