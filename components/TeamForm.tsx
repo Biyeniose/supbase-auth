@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { createClient } from "@/utils/supabase/client";
 import { type User } from "@supabase/supabase-js";
+import Image from "next/image";
 
 interface Team {
   team_name: string;
@@ -121,7 +122,7 @@ const TeamForm: React.FC = () => {
           >
             {selectedTeam ? (
               <>
-                <img
+                <Image
                   src={selectedTeam.logo_url}
                   alt={selectedTeam.team_name}
                   className="inline-block w-6 h-6 mr-2"
@@ -142,7 +143,7 @@ const TeamForm: React.FC = () => {
                   onClick={() => handleTeamSelect(team)}
                   className="p-2 cursor-pointer hover:bg-gray-100 flex items-center"
                 >
-                  <img
+                  <Image
                     src={team.logo_url}
                     alt={team.team_name}
                     className="inline-block w-6 h-6 mr-2"
@@ -158,7 +159,7 @@ const TeamForm: React.FC = () => {
       {/* Display the selected team */}
       {selectedTeam && (
         <div className="mb-4 flex items-center">
-          <img
+          <Image
             src={selectedTeam.logo_url}
             alt={selectedTeam.team_name}
             className="w-10 h-10 mr-4"
