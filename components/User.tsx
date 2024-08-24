@@ -26,6 +26,11 @@ export default async function User() {
     return redirect("/predict");
   };
 
+  const handleDataClick = async () => {
+    "use server";
+    return redirect("/data");
+  };
+
   return (
     user && (
       <div className="flex items-center gap-4">
@@ -37,14 +42,15 @@ export default async function User() {
             Profile
           </button>
         </form>
-        <form action={handlePredictClick}>
+        <form action={handleDataClick}>
           <button
             type="submit"
             className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
           >
-            Predict
+            Data
           </button>
         </form>
+
         <form action={signOut}>
           <button
             type="submit"
