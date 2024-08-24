@@ -70,7 +70,7 @@ export default async function Login({
             placeholder="••••••••"
             required
           />
-          <button className="bg-indigo-700 rounded-md px-4 py-2 text-foreground mb-2">
+          <button className="bg-green-700 rounded-md px-4 py-2 text-foreground mb-2">
             Sign In
           </button>
 
@@ -83,7 +83,7 @@ export default async function Login({
 
         <Link
           href="/forgot-password"
-          className="rounded-md no-underline text-indigo-400 text-sm "
+          className="rounded-md no-underline text-green-700 text-sm "
         >
           Forgotten Password.
         </Link>

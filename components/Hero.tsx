@@ -25,23 +25,24 @@ export const Hero = () => {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Sign Up and compete with your friends to see who accumulates the
-              most points each week
+              most points each week Lock in your Predictions then check back to
+              see the outcomes
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Predict matches ranging from the Premier League, La Liga,
-              Bundesliga
+            <p className="mt-6 py-4  text-lg leading-8 text-gray-300">
+              Lock in your Predictions then check back to see the outcomes
             </p>
+
             <div className="justify-center flex gap-3">
               <Image
-                src="/league_logos/epl.jpg" // Corrected path
+                src="/league_logos/epl.png" // Corrected path
                 alt="Description of the image" // Alt text for accessibility
                 width={100} // Desired width of the image
                 height={100} // Desired height of the image
               />
 
               <Image
-                src="/league_logos/laliga.jpg" // Corrected path
+                src="/league_logos/fr.png" // Corrected path
                 alt="Description of the image" // Alt text for accessibility
                 width={100} // Desired width of the image
                 height={100} // Desired height of the image
@@ -49,9 +50,17 @@ export const Hero = () => {
               />
 
               <Image
-                src="/league_logos/ucl.jpg" // Corrected path
+                src="/league_logos/gr.png" // Corrected path
                 alt="Description of the image" // Alt text for accessibility
-                width={120} // Desired width of the image
+                width={100} // Desired width of the image
+                height={100} // Desired height of the image
+                className=""
+              />
+
+              <Image
+                src="/league_logos/ita.png" // Corrected path
+                alt="Description of the image" // Alt text for accessibility
+                width={100} // Desired width of the image
                 height={100} // Desired height of the image
                 className=""
               />

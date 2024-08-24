@@ -125,6 +125,8 @@ const TeamForm: React.FC = () => {
                 <Image
                   src={selectedTeam.logo_url}
                   alt={selectedTeam.team_name}
+                  width={20}
+                  height={20}
                   className="inline-block w-6 h-6 mr-2"
                 />
                 {selectedTeam.team_name}
@@ -146,6 +148,8 @@ const TeamForm: React.FC = () => {
                   <Image
                     src={team.logo_url}
                     alt={team.team_name}
+                    width={20}
+                    height={20}
                     className="inline-block w-6 h-6 mr-2"
                   />
                   {team.team_name}
@@ -162,6 +166,8 @@ const TeamForm: React.FC = () => {
           <Image
             src={selectedTeam.logo_url}
             alt={selectedTeam.team_name}
+            width={20}
+            height={20}
             className="w-10 h-10 mr-4"
           />
           <span className="text-lg font-medium text-black">
