@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  nextjs-app:
+    build:
+      context: .
+      target: production # Use the production stage from the Dockerfile
+    ports:
+      - "3000:3000" # Map port 3000 of the container to port 3000 on the host
+    environment:
+      NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      NODE_ENV: production
+    command: npm run start # Run Next.js in production mode
