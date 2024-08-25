@@ -4,6 +4,7 @@ services:
   nextjs-app:
     build:
       context: .
+      dockerfile: Dockerfile
       target: development # Use the development stage from the Dockerfile
     ports:
       - "3000:3000" # Map port 3000 of the container to port 3000 on the host
@@ -11,7 +12,14 @@ services:
       NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
       NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
       NODE_ENV: development
-    volumes:
-      - .:/app # Mount the current directory to /app in the container
-      - /app/node_modules # Prevent overwriting of node_modules
-    command: npm run dev # Run Next.js in development mode
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./next.config.js
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: ./
+          target: /app/
+          action: sync
