@@ -21,19 +21,17 @@ export const Hero = () => {
         <div className="mx-auto max-w-2xl lg:py-16">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-              Make Predictions for upcoming sports matches
+              View Historic Data about your favorite teams
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Sign Up and compete with your friends to see who accumulates the
-              most points each week Lock in your Predictions then check back to
-              see the outcomes
+              Use ML techniques to predict the outcomes of matches
             </p>
 
-            <p className="mt-6 py-4  text-lg leading-8 text-gray-300">
-              Lock in your Predictions then check back to see the outcomes
+            <p className="mt-6 text-lg leading-8 text-gray-300 py-2">
+              Make Predictions for upcoming matches and see your results
             </p>
 
-            <div className="justify-center flex gap-3">
+            <div className="justify-center flex gap-3 py-4">
               <Image
                 src="/league_logos/epl.png" // Corrected path
                 alt="Description of the image" // Alt text for accessibility
